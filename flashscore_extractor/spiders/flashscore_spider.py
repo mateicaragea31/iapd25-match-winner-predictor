@@ -103,7 +103,10 @@ class FlashscoreSpider(scrapy.Spider):
             elif category_name == 'Intervenții portar':
                 item['interventii_portar_gazda'] = home_val
                 item['interventii_portar_oaspete'] = away_val
-
+            elif category_name == 'Faulturi':
+                item['faulturi_gazda'] = home_val
+                item['faulturi_oaspete'] = away_val
             if not red_card_category:
                 item['cartonase_rosii_gazda'] = '0'
                 item['cartonase_rosii_oaspete'] = '0'
+        yield item

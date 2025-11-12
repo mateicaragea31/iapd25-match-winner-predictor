@@ -3,7 +3,7 @@ import csv
 
 class SaveToCsvPipeline:
     def open_spider(self, spider):
-        self.file = open('flashscore_stats.csv', 'w', newline='')
+        self.file = open('flashscore_stats.csv', 'w', newline='', encoding='utf-8')
         self.fieldnames = ['link_meci', 'data_meci', 'echipa_gazda', 'echipa_oaspete', 'goluri_gazda', 'goluri_oaspete',
                            'posesie_minge_gazda', 'posesie_minge_oaspete', 'total_suturi_gazda', 'total_suturi_oaspete',
                            'suturi_pe_poarta_gazda', 'suturi_pe_poarta_oaspete', 'cornere_gazda', 'cornere_oaspete',
