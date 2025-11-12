@@ -1,0 +1,33 @@
+import scrapy
+
+class MatchItem(scrapy.Item):
+    data_meci = scrapy.Field()
+    echipa_gazda = scrapy.Field()
+    echipa_oaspete = scrapy.Field()
+    goluri_gazda = scrapy.Field()
+    goluri_oaspete = scrapy.Field()
+    link_meci = scrapy.Field()
+
+
+    posesie_minge_gazda = scrapy.Field()
+    posesie_minge_oaspete = scrapy.Field()
+    total_suturi_gazda = scrapy.Field()
+    total_suturi_oaspete = scrapy.Field()
+    suturi_pe_poarta_gazda = scrapy.Field()
+    suturi_pe_poarta_oaspete = scrapy.Field()
+    cornere_gazda = scrapy.Field()
+    cornere_oaspete = scrapy.Field()
+    cartonase_galbene_gazda = scrapy.Field()
+    cartonase_galbene_oaspete = scrapy.Field()
+    cartonase_rosii_gazda = scrapy.Field()
+    cartonase_rosii_oaspete = scrapy.Field()
+    ofsaiduri_gazda = scrapy.Field()
+    ofsaiduri_oaspete = scrapy.Field()
+    lovituri_libere_gazda = scrapy.Field()
+    lovituri_libere_oaspete = scrapy.Field()
+    aruncari_de_la_margine_gazda = scrapy.Field()
+    aruncari_de_la_margine_oaspete = scrapy.Field()
+    faulturi_gazda = scrapy.Field()
+    faulturi_oaspete = scrapy.Field()
+    interventii_portar_gazda = scrapy.Field()
+    interventii_portar_oaspete = scrapy.Field()
